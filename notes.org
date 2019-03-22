@@ -1,0 +1,62 @@
+With text on logic blocks face up:
++x = Left to right
+-y = Above to below
+-z = Top to bottom
+
+#+begin_src
+  +-------+     +y  \ | +z
+  | 1234  |\         \|
+  +-------+ +    -x --+-- +x
+   \       \|         |\
+    +-------+      -z | \ -y
+#+end_src
+
+types:
+
+o { t, f, p }
+s { t, f, p }
+
+34 - Toggle
+Props: val
+
+56 - Inventory Sensor
+Props: val, offset, itemFilter
+
+35 - Bool Function
+Props: val, gateType
+
+20 - Agent Trigger
+Props: val, offset, itemFilter, agentTriggerType
+
+57 - Logic Lamp (s)
+Props: val
+
+49 - Logic Set Block
+Props: val
+
+53 - Logic Push Block
+Propls: val
+
+54 - Counter Block
+Props: val
+
+78 - Number Block
+Props: val
+
+55 - Math Block
+Props: val, compareValue, lastReceivedValue, opType
+
+50 - Gate
+Props: val, open
+
+51 - Timer
+Props: val, maxTime, timerCountdown
+
+52 - Delta
+Props: val
+
+
+
+Silo (b)
+
+targetID, type, facingDir, legacyActiveRecipe, currentlyAssignedRecipes, recipeInstance, legacyProductionState, upgradeLEvel, productionProgress, inventory {t,d,f,c,cap}, isConstruction, upgradeList, properties { itemFilter }

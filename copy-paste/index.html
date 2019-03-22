@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="/third-party/breq/dist/breq.min.js"></script>
+        <script src="copy-paste.js"></script>
+    </head>
+    <body>
+        <label><input id="severOutsideLinks" type="checkbox">Sever links outside target area?</label>
+        <label><input id="severOutsideOffsets" type="checkbox">Sever offsets outside target area?</label>
+        <label><input id="pinOutsideOffsets" type="checkbox">Pin offsets outside target area? (keep same target position)</label>
+        <label><input id="clearTargetArea" type="checkbox">Remove blocks inside target area before copying?</label>
+        <br>
+        <input id="f" type="file" />
+        <br>
+        <button onclick="magic()">Process</button>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+[submodule "third-party/three.js"]
+	path = third-party/three.js
+	url = https://github.com/mrdoob/three.js.git
+[submodule "third-party/three-instanced-mesh"]
+	path = third-party/three-instanced-mesh
+	url = https://github.com/pailhead/three-instanced-mesh.git
+[submodule "third-party/breq"]
+	path = third-party/breq
+	url = https://github.com/JamesMGreene/breq.git

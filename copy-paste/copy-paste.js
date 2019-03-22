@@ -129,13 +129,13 @@ function copyBlocks(blocks, fromBox, toBoxes, options) {
             }
 
             for( toBox of toBoxes ) {
-                let newBlock = Object.assign({}, block);
+                let newBlock = JSON.parse(JSON.stringify(block)); // deep clone
 
                 let newPos = move(pos, fromBox, toBox);
 
                 newBlock.pos = pointToStr( newPos );
 
-                let info = ( newBlock.o || newBlock.s || {} );
+                let info = ( newBlock.o || newBlock.s );
                 if (info && info.p) {
                     info.p = mapProps(info.p, function(key,value) {
                         switch(key) {

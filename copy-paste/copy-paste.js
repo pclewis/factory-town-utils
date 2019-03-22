@@ -1,4 +1,4 @@
-let THREE = require('/third-party/three.js/build/three.min.js');
+let THREE = require('../third-party/three.js/build/three.min.js');
 
 const ID_AGENT_TRIGGER = 20;
 

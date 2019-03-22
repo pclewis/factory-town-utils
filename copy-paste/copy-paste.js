@@ -189,6 +189,11 @@ function processSave(save, options) {
 
 function magic() {
 
+    let container = document.getElementById('download');
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+
     let options = {};
     for (let option of OPTIONS) {
         options[option] = document.getElementById(option).checked;
@@ -211,7 +216,8 @@ function magic() {
         el.setAttribute('href', URL.createObjectURL(new Blob( [JSON.stringify(save)], {type: 'text/plain'} )));
         el.setAttribute('download', f.name.replace(/\.sav$/, '-modified.sav'));
         el.innerText = 'download';
-        document.body.appendChild(el);
+
+        container.appendChild(el);
     };
 
     r.readAsText(f);
